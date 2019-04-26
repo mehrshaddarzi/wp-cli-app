@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+wp-cli.local.yml
+node_modules/
+vendor/
+*.zip
+*.tar.gz
+composer.lock
+*.log
+/command/basic/test.php

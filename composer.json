@@ -1,0 +1,40 @@
+{
+  "name": "wp-cli-application/core",
+  "type": "wp-cli-package",
+  "description": "Professional WordPress Command Line Package For Developers",
+  "homepage": "https://github.com/wp-cli-application/wp-cli-application",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mehrshad Darzi",
+      "email": "mehrshad@wp-cli-app.com",
+      "homepage": "https://wp-cli-app.com"
+    }
+  ],
+  "support": {
+    "docs": "https://docs.wp-cli-app.com/",
+    "issues": "https://github.com/wp-cli-application/wp-cli-application/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "WP_CLI_APP\\": "src/"
+    },
+    "files": [
+      "command.php"
+    ]
+  },
+  "require": {
+    "php": "^5.5 || ^7.0",
+    "nicolab/php-ftp-client": "^1.4.1",
+    "ext-mbstring": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-dom": "*",
+    "ext-zip": "*",
+    "ext-mysqli": "*"
+  },
+  "require-dev": {
+    "wp-cli/wp-cli": "^2.0",
+    "phpunit/phpunit": "^4.8"
+  }
+}
